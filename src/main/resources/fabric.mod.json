@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "trinkap",
+	"version": "${version}",
+	"name": "Trinkets and Apparatuses",
+	"description": "This is a Tutorial Mod made by Kaupenjoe :)",
+	"authors": [
+		"mistersecret312"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "logo.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mistersecret312.trinkap.TrinkapMod"
+		],
+		"client": [
+			"net.mistersecret312.trinkap.TrinkapModClient"
+		],
+		"fabric-datagen": [
+			"net.mistersecret312.trinkap.TrinkapModDataGenerator"
+		]
+	},
+	"mixins": [
+		"trinkap.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
